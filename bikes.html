@@ -1,0 +1,260 @@
+<html>
+  <head>
+   <title>Bicycling</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+   <style>
+   #d2{
+   color:black;
+   position:absolute;
+   top:16px;
+   left:60px;
+   font-size:30px;
+   font-weight:bold;
+   font-family:ALGERIAN;
+   }
+   #d3{
+   color:#FFFFFF;
+   position:absolute;
+   left:290px;
+   top:29px;
+   font-weight:bold;
+   }
+   #d4{
+   color:#FFFFFF;
+   position:absolute;
+   left:430px;
+   top:29px;
+   font-weight:bold;
+   }
+   
+   #d8{
+   position:absolute;
+   top:45px;
+   width:100%;
+   height:140%;
+   }
+   #d9{
+   color:blue;
+   position:absolute;
+   left:2%;
+   top:130px;
+   text-decoration:underline;
+   font-size:20px;
+   font-weight:bold;
+   }
+   #d10{
+   color:blue;
+   position:absolute;
+   text-decoration:underline;
+   left:2%;
+   top:160px;
+   font-size:20px;
+   font-weight:bold;
+   }
+   #d11{
+   color:blue;
+   position:absolute;
+   left:2%;
+   font-size:20px;
+   text-decoration:underline;
+   top:190px;
+   font-weight:bold;
+   }
+   #d12{
+   color:blue;
+   position:absolute;
+   left:2%;
+   text-decoration:underline;
+   font-size:20px;
+   top:220px;
+   font-weight:bold;
+   }
+   input:invalid {
+  border: 2px solid red;
+}
+   #d13{
+   color:blue;
+   position:absolute;
+   left:2%;
+   font-size:20px;
+   top:250px;
+   text-decoration:underline;
+   font-weight:bold;
+   }
+  
+ 
+   </style>
+  <script type="text/javascript" language="javascript">
+               function imagesload()
+                     {
+                        document.getElementById('d9').focus();
+                     }					 
+
+			   function changeImage(a,b,c,d,e,f,g,h,i){
+                   var i1 = document.getElementById('i1');
+                   var i2 = document.getElementById('i2');
+                   var i3 = document.getElementById('i3');
+                   var i4 = document.getElementById('i4');
+                   var b1 = document.getElementById('b1');
+                   var b2 = document.getElementById('b2');
+                   var b3 = document.getElementById('b3');
+                   var b4 = document.getElementById('b4');
+                   var l1 = document.getElementById('l1');
+                   var l2 = document.getElementById('l2');
+                   var l3 = document.getElementById('l3');
+                   var l4 = document.getElementById('l4');	 
+                   var d1 = document.getElementById(i);				   
+				   i1.src=a;
+				   i2.src=b;
+				   i3.src=c;
+				   i4.src=d;
+				   l1.innerText=e;
+				   l2.innerText=f;
+				   l3.innerText=g;
+				   l4.innerText=h;
+				   d1.style.color="green";
+				   i1.style.visibility='visible';
+				   i2.style.visibility='visible';
+				   i3.style.visibility='visible';
+				   i4.style.visibility='visible';
+				   b1.style.visibility='visible';
+				   b2.style.visibility='visible';
+				   b3.style.visibility='visible';
+				   b4.style.visibility='visible';
+				   l1.style.visibility='visible';
+				   l2.style.visibility='visible';
+				   l3.style.visibility='visible';
+				   l4.style.visibility='visible';
+                    
+                }
+			function nextpage()
+			{
+			window.open("testride.html");
+			}
+			function signup()
+		    {
+			window.alert("Registered Successfully!");
+			
+			}
+			var count=0;
+				function cartpage()
+				{
+				count=count+1;
+				
+				window.alert("Item has been added to your cart!");
+				
+				}
+				function cartcount()
+				{
+				
+				window.alert("Total number of items in cart: "+count);
+				}
+				
+				
+   </script>
+   
+  
+  </head>
+  <body onload="imagesload()">
+   <nav class="navbar navbar-inverse">
+       <div class="container-fluid">
+       <div class="navbar-header">
+       <a class="navbar-brand" href="#" style="font-size:120%;font-weight:bold;color:white;">Bicycling</a>
+       </div>
+       <ul class="nav navbar-nav">
+       <li><a href="final.html">Home</a></li>
+       <li class="active"><a href="bikes.html">Bikes</a></li>
+      
+	   <li><a href="testride.html">Test Ride</a></li>
+       </ul>
+       <ul class="nav navbar-nav navbar-right">
+       <li><a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalRegisterForm"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+       </ul>
+	   <ul class="nav navbar-nav navbar-right">
+       <li><a href=""  class="btn btn-default btn-rounded mb-4" onclick="cartcount();return false;"><span class="glyphicon glyphicon-shopping-cart"></span> &nbspCart &nbsp </a></li>
+       </ul>
+       </div>
+      </nav>
+
+<div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Sign up</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <i class="fas fa-user prefix grey-text"></i>
+          <input type="text" id="orangeForm-name" class="form-control" required>
+          <label data-error="wrong" data-success="right" for="orangeForm-name">Your name</label>
+        </div>
+        <div class="md-form mb-5">
+          <i class="fas fa-envelope prefix grey-text"></i>
+          <input type="email" id="orangeForm-email" class="form-control" required>
+          <label data-error="wrong" data-success="right" for="orangeForm-e mail">Your email</label>
+        </div>
+
+        <div class="md-form mb-4">
+          <i class="fas fa-lock prefix grey-text"></i>
+          <input type="password" id="orangeForm-pass" class="form-control" required>
+          <label data-error="wrong" data-success="right" for="orangeForm-pass">Your password</label>
+        </div>
+
+      </div>
+	  <div class="modal-footer">
+      <div class="md-form d-flex justify-content-center">
+        <button type="submit" class="btn btn-default" onclick="signup()">Sign up</button>
+      </div></div>
+	  <p id="p1">By signing up, you consent to sending the above information to Bicycling,which will be stored in India.This information may be used for providing marketing materials to you from Bicycling, it subsidiaries, its affiliate Bicycling Travel LLC, and your local dealers.</p>
+    </div>
+  </div>
+</div>	  
+   
+   
+   
+  <img id=i1 src="m1.jpg" style="width:30%;height:38%;position:absolute;left:30%;top:9%;">
+ <label id=l1 style="width:30%;height:22%;position:absolute;left:30%;top:46%;background-color:white;color:black;">Milton NEXTRO 26T Disc BRAKE-Green color-68.5 degree head angle with 75 degree seat angle-top tubes are lengthy (615mm on the 18)&nbsp Good rubber and rims, excellent Shimano SLX brakes &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Price:12,599/-</label>
+<button id=ca1 style="width:9%;height:5%;position:absolute;left:41%;top:63%;background-color:lightgreen;font-weight:bold;" onclick=cartpage()>Add To Cart</button>
+
+ <button id=b1 style="width:9%;height:5%;position:absolute;left:51%;top:63%;background-color:lightgreen;font-weight:bold;" onclick=nextpage()>Test Ride</button>
+
+  <img id=i2 src="m2.jpg" style="width:30%;height:38%;position:absolute;left:63%;top:9%;">
+  <label id=l2 style="width:30%;height:22%;position:absolute;left:63%;top:46%;background-color:white;color:black;">Hero-Sprint-RX1-Single-Speed &nbsp &nbsp  It features a 16.7 steel suspension frame and is ideal for cyclist with height between 5 feet 4 inches to 6 &nbsp Price:13,499/-</label>
+  <button id=ca2 style="width:9%;height:5%;position:absolute;left:74%;top:63%;background-color:lightgreen;font-weight:bold;" onclick=cartpage()>Add To Cart</button>
+
+  <button id=b2 style="width:9%;height:5%;position:absolute;left:84%;top:63%;background-color:lightgreen;font-weight:bold;" onclick=nextpage()>Test Ride</button>
+
+  <img id=i3 src="m3.jpg" style="width:30%;height:38%;position:absolute;left:30%;top:80%;">
+  <label id=l3 style="width:30%;height:22%;position:absolute;left:30%;top:118%;background-color:white;color:black;">Hero RX-1 24T trendy bicycle for men.It features a steel frame with front and rear suspensions and is ideal for cyclist with height between 4 feet 10 &nbsp &nbsp Price:15,499/-</label>
+  <button id=ca3 style="width:9%;height:5%;position:absolute;left:41%;top:135%;background-color:lightgreen;font-weight:bold;" onclick=cartpage()>Add To Cart</button>
+
+  <button id=b3 style="width:9%;height:5%;position:absolute;left:51%;top:135%;background-color:lightgreen;font-weight:bold;" onclick=nextpage()>Test Ride</button> 
+ 
+  <img id=i4 src="m4.jpg" style="width:30%;height:38%;position:absolute;left:63%;top:80%;">
+  <label id=l4 style="width:30%;height:22%;position:absolute;left:63%;top:118%;background-color:white;color:black;">Hero RX1 26T Arjun Kapoor limited edition Single Speed Cycle - Gray & White Adult Bicycle/Man/Men/Women &nbsp &nbsp Price:20,599/-</label>
+  <button id=ca4 style="width:9%;height:5%;position:absolute;left:74%;top:135%;background-color:lightgreen;font-weight:bold;" onclick=cartpage()>Add To Cart</button>
+
+  <button id=b4 style="width:9%;height:5%;position:absolute;left:84%;top:135%;background-color:lightgreen;font-weight:bold;" onclick=nextpage()>Test Ride</button>
+   
+
+<div class="col-sm-12">
+	<h2 style="position:absolute;top:8%;left:2%;border:1px solid black;font-weight:bold;color:black;">SHOP BY CATEGORY</h2>
+	<a id=d9 onmouseover="changeImage('m1.jpg','m2.jpg','m3.jpg','m4.jpg','Milton NEXTRO 26T Disc BRAKE-Green color-68.5 degree head angle with 75 degree seat angle-top tubes are lengthy (615mm on the 18)&nbsp Good rubber and rims, excellent Shimano SLX brakes &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Price:12,599/-','Hero-Sprint-RX1-Single-Speed &nbsp &nbsp  It features a 16.7 steel suspension frame and is ideal for cyclist with height between 5 feet 4 inches to 6 &nbsp Price:13,499/-'
+	,'Hero RX-1 24T trendy bicycle for men.It features a steel frame with front and rear suspensions and is ideal for cyclist with height between 4 feet 10 &nbsp &nbsp Price:15,499/-','Hero RX1 26T Arjun Kapoor limited edition Single Speed Cycle - Gray & White Adult Bicycle/Man/Men/Women &nbsp &nbsp Price:20,599/-','d9')">Mountain</a>
+	<a id=d10 onmouseover="changeImage('r1.jpg','r2.jpg','r3.jpg','r4.jpg','Terrific titanium: 12 of the loveliest titanium road bikes-3Al/2.5V tubing (where titanium is alloyed with 3% aluminium and 2.5% vanadium) and 6Al/4V, a harder grade of titanium, is seen on much more expensive framesets.&nbsp &nbsp Price:12,399/-','J.Guillem Atalaya Gravel is an enticing choice in the premium titanium gravel bike market.J.Guillem Atalaya Gravel with its feeling of control and capability on a variety of terrain.&nbsp Price:18,899/-','Frame:Vitus ZX1 Aero DiscForks: Vitus ZX1 – Team Edition,Brakes: SRAM HRD,Rotors: SRAM Centerline X Rotor 160mm Front/140mm Rear,Shifter: SRAM RED eTap HRD Price:20,199/-','Cyclo-cross bike- A road bicycle frame similar to a racing or sport/touring bicycle, but with more slack geometry, wider rims/tires and cantilever brakes.  Price:23,299/-','d10')">Road</a>
+	<a id=d11 onmouseover="changeImage('h1.jpg','h2.jpg','h3.jpg','h4.jpg','Vitus Bikes has kicked another goal with the Zenium SL, a fast endurance bike with the superior stopping power of disc brakes, a fun and fast frame and an excellent-value spec.Price:23,455/-','light frame, medium gauge wheels, and derailleur gearing, and feature straight or curved-back, touring handlebars for more upright riding.Price:18,999/-','Hero Urban 26 T Hybrid Cycle/City Bike(Single Speed, White)-Gear:Single Speed-Gear Type:Non Geared-Price:10,999/-','HERCULES ACE 26 T Hybrid Cycle/City Bike  (Single Speed, Yellow)Price:15,888/-','d11')">Hybrid</a>
+	<a id=d12 onmouseover="changeImage('f1.jpg','f2.jpg','f3.jpg','f4.jpg','Milton NEXTRO 26T Disc BRAKE-Green color-68.5 degree head angle with 75 degree seat angle-top tubes are lengthy (615mm on the 18)&nbsp Good rubber and rims, excellent Shimano SLX brakes &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Price:12,599/-','light frame, medium gauge wheels, and derailleur gearing, and feature straight or curved-back, touring handlebars for more upright riding.Price:18,999/-','This exclusively styled Life Fitness LifeCycle 95Ci Upright Bike is remanufactured to resemble the Integrity Series bike by Life Fitness. Price:12,990/-','ASUNA Lancer Cycle Exercise Bike - Magnetic Belt Rear Drive Commercial Indoor Cycling Bike-Price:16,599/-','d12')">Fitness</a>
+	<a id=d13 onmouseover="changeImage('w1.jpg','w2.jpg','w3.jpg','w4.jpg','BULLS EBIKE AMINGA-27,5 Zoll MTB 9 Gang Shimano Deore RD-M592-SGS Shadow Schaltwerk-68.5 degree head angle (with 51mm offset fork) with 75 degree seat angle,top tubes are lengthy (615mm on the 18)-Price:9999/-','Color:Red,Model:Pari,Automation Grade:Manual,Brand:AtsonWheel,Size:26X1.5 Inch,Chain Cover: Yes-Price:8,999/-','Vitus Bikes has kicked another goal with the Zenium SL, a fast endurance bike with the superior stopping power of disc brakes, a fun and fast frame and an excellent-value spec.Price:23,455/-','Hero RX-1 24T trendy bicycle for men.It features a steel frame with front and rear suspensions and is ideal for cyclist with height between 4 feet 10 &nbsp &nbsp Price:15,499/-','d13')">Women's</a>
+</div>
+	
+	</body>
+
+</html>

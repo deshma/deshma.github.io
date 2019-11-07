@@ -1,0 +1,239 @@
+<html>
+  <head>
+   <title>Bicycling</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+   <style>
+   #f1
+   {
+   position:absolute;
+   left:28%;
+   top:110%;
+   }
+  #d2{
+   color:white;
+   position:absolute;
+   top:16px;
+   left:60px;
+   font-size:30px;
+   font-weight:bold;
+   font-family:ALGERIAN;
+   }
+   #d3{
+   color:#FFFFFF;
+   position:absolute;
+   left:290px;
+   top:29px;
+   font-weight:bold;
+   }
+   #d4{
+   color:#FFFFFF;
+   position:absolute;
+   left:430px;
+   top:29px;
+   font-weight:bold;
+   }
+   #d5{
+   color:#FFFFFF;
+   position:absolute;
+   left:620px;
+   top:29px;
+   font-weight:bold;
+   }
+   #d6{
+   color:#FFFFFF;
+   position:absolute;
+   left:790px;
+   top:29px;
+   font-weight:bold;
+   }
+   #d7{
+   color:#FFFFFF;
+   position:absolute;
+   left:960px;
+   top:29px;
+   font-weight:bold;
+   }
+   h1{
+   font-weight:bold;
+   color:black;
+   
+   }
+   
+   
+   p{
+   color:gray;
+   position:absolute;
+   left:10%;
+   top:95%;
+   font-size:115%;
+   }
+   input:invalid {
+  border: 2px solid red;
+}
+   #s1
+   {
+   height:35px;
+   }
+   #ta
+   {
+   height:80px;
+   }
+   #r
+   {
+   background-color:green;
+   font-weight:bold;
+   color:black;
+   font-size:110%;
+   }
+  
+   </style>
+   <script>
+   function signup()
+		    {
+			window.alert("Registered Successfully!");
+			
+			}
+   </script>
+  </head>
+  <body>
+  <nav class="navbar navbar-inverse">
+       <div class="container-fluid">
+       <div class="navbar-header">
+       <a class="navbar-brand" href="#" style="font-size:120%;font-weight:bold;color:white;">Bicycling</a>
+       </div>
+       <ul class="nav navbar-nav">
+       <li><a href="final.html">Home</a></li>
+       <li><a href="bikes.html">Bikes</a></li>
+       
+	   <li class="active"><a href="testride.html">Test Ride</a></li>
+       </ul>
+       <ul class="nav navbar-nav navbar-right">
+       <li><a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalRegisterForm"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+       </ul>
+	   <ul class="nav navbar-nav navbar-right">
+       <li><a href="" class="btn btn-default btn-rounded mb-4"><span class="glyphicon glyphicon-shopping-cart"></span> &nbspCart &nbsp </a></li>
+       </ul>
+       </div>
+      </nav>
+	  
+	  
+<h1 class="col-sm-offset-4 col-sm-5">BOOK YOUR TEST RIDE!</h1>
+	  
+	  	 
+   <img src="test.jpg" class="col-sm-12" width=100% height=80%  />
+   
+   <div class="row">
+   <p class="col-sm-12">Ride quality, balance, fit, handling—these are all important considerations when buying a bike, and it can be hard to get a feel for them without riding the bike first-hand.</p>
+   <p class="col-sm-offset-2 col-sm-8">That’s why we make it easy for you to test ride Trek bikes at your local retailer and demo events across the country!</p>
+   </div>
+   <div class="col-sm-12">
+    <form id="f1" class="form-horizontal">
+	<div class="form-group">
+    <label class="control-label col-sm-4">Name:</label>
+    <div class="col-sm-8">
+      <input type="text" class="form-control" id="name" placeholder="Enter name" required>
+    </div>
+  </div>
+	
+  <div class="form-group">
+    <label class="control-label col-sm-4" for="email">Email:</label>
+    <div class="col-sm-8">
+      <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+    </div>
+  </div>
+  
+  <div class="form-group">
+    <label class="control-label col-sm-4">Mobile Number:</label>
+    <div class="col-sm-8">
+      <input type="text" class="form-control" id="mobile" placeholder="Enter mobile number" required>
+    </div>
+  </div>
+  
+  <div class="form-group">
+    <label class="control-label col-sm-4">Your city:</label>
+   <div class="col-sm-8">
+    <select id="s1" class="col-sm-8" required>
+  <option value="chennai">Chennai</option>
+  <option value="coimbatore">Coimbatore</option>
+  <option value="bangalore">Bangalore</option>
+  <option value="mumbai">Mumbai</option>
+  <option value="hyderabad">Hyderabad</option>
+</select> 
+</div> </div>
+  
+  <div class="form-group">
+    <label class="control-label col-sm-4">Preferred Date:</label>
+    <div class="col-sm-8">
+      <input type="text" class="form-control" id="date" required>
+    </div>
+  </div>
+  
+<div class="form-group">
+    <label class="control-label col-sm-4">Your Preferred ride:</label>  
+  <div class="checkbox control-label col-sm-9">
+        <input type="checkbox">Mountain&nbsp &nbsp &nbsp &nbsp
+		<input type="checkbox">Road&nbsp &nbsp &nbsp
+		<input type="checkbox">Hybrid&nbsp &nbsp &nbsp 
+		<input type="checkbox">Fitness&nbsp &nbsp &nbsp
+		<input type="checkbox">Women's
+      </div>
+    </div>
+  
+  <div class="form-group">
+    <label class="control-label col-sm-9">What other brands do you own:</label>
+    <div class="col-sm-12">
+      <input type="textarea" class="form-control" id="ta">
+    </div>
+  </div>
+  
+  <div class="form-group">
+    <div class="col-sm-offset-4 col-sm-9">
+      <button type="submit" id="r" class="btn btn-default">Request My Ride</button>
+    </div>
+  </div>
+</form> 
+  </div>
+  
+   <div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Sign up</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <i class="fas fa-user prefix grey-text"></i>
+          <input type="text" id="orangeForm-name" class="form-control" required>
+          <label data-error="wrong" data-success="right" for="orangeForm-name">Your name</label>
+        </div>
+        <div class="md-form mb-5">
+          <i class="fas fa-envelope prefix grey-text"></i>
+          <input type="email" id="orangeForm-email" class="form-control" required>
+          <label data-error="wrong" data-success="right" for="orangeForm-e mail">Your email</label>
+        </div>
+
+        <div class="md-form mb-4">
+          <i class="fas fa-lock prefix grey-text"></i>
+          <input type="password" id="orangeForm-pass" class="form-control" required>
+          <label data-error="wrong" data-success="right" for="orangeForm-pass">Your password</label>
+        </div>
+
+     </div>
+	  <div class="modal-footer">
+      <div class="md-form d-flex justify-content-center">
+        <button type="submit" class="btn btn-default" onclick="signup()">Sign up</button>
+      </div></div>
+	    </div>
+  </div>
+</div>
+   
+   </body>
+
+</html>
